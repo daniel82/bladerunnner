@@ -1,0 +1,42 @@
+{
+    "name": "daniel82/bladerunner",
+    "type": "wordpress-plugin",
+    "description": "WordPress Blade L6 template engine",
+    "keywords": ["laravel", "blade", "wordpress"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel",
+            "email": "danielmattke.82@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        // "illuminate/config": "self.version",
+        "illuminate/config": "^6.0",
+        "illuminate/view": "^6.0",
+        // "illuminate/view": "self.version"
+        "symfony/yaml": "^3.0",
+        "brain/hierarchy": "^2.0"
+    },
+    "require-dev": {
+        "frozzare/wp-test-suite": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bladerunner\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bladerunner\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.7.4-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
